@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #6c757d;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#actualheader {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0.5rem 3rem;
+}
+
+.actualheader-left {
+    align-items: center;
+    display: block;
+    display: inline-flex;
+    flex: 0 0 50%;
+    height: 100%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.actualheader-left > * {
+    background-color: transparent;
+    color: #6C757D;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.actualheader-right {
+    align-items: center;
+    display: block;
+    display: inline-flex;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    text-align: right;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.actualheader-btn {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-radius: 0;
+    border: 1px solid transparent;
+    color: #212529;
+    cursor: pointer;
+    display: inline-block;
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 1rem;
+    padding: 0.25rem 0.5rem;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: 0.15s ease-in-out;
+    user-select: none;
+    vertical-align: middle;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.actualheader-btn:hover {
+    background-color: #ececec;
+    border-color: #e6e6e6;
+}
+
+button.actualheader-btn ~ div.clickdropdown-content {
+    margin-top: 0px;
+    border: 1px solid #00000026;
+}
+
+button.actualheader-btn ~ div.clickdropdown-content > button {
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.big {
+    font-size: 2.5rem
+}
+
+div span.big {
+    line-height: 1.2;
+    margin: 0 -2px;
+    padding: 0 .5rem;
+}
+
+.mid {
+    flex: 0 0 50%
+}
+
+.searcharea {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    width: 99%
+}
+
+.searchbar {
+    border-radius: 0;
+    border: 1px solid #ced4da;
+    display: block;
+    flex: 1 1 auto;
+    margin-bottom: 0;
+    min-width: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 1%;
+}
+
+.searchbar-icon {
+    align-items: center;
+    border: 1px solid #ced4da;
+    display: flex;
+    margin-bottom: 0;
+    margin-left: -1px;
+    padding: .5rem;
+    text-align: center;
+}
+
+.searchbar-icon span {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5
+}
+
+.light {
+    background-color: #ffd333;
+    color: #3d464d
+}
+
+.dark {
+    background-color: #3d464d;
+    color: #ffd333;
+}
+
+.fa-search {
+    color: #ffd333
+}
+
+.upper {
+    text-transform: uppercase
+}
+
+.text-decoration-none {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.left,
+.mid,
+.right {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%
+}
+
+.right {
+    text-align: right
+}
+
+.right * {
+    margin: 0
+}
+
+.right h5 {
+    color: #3d464d;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#MULTISHOPheader {
+    background-color: #FFFFFF;
+}
+
+#MULTISHOPheader,
+#detailsheader {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0 4rem;
+}
+
+#MULTISHOPheader {
+    padding: 1rem 4rem
+}
+
+#detailsheader * {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+#detailsheader .dark:hover {
+    color: #ffd333;
+}
+
+.number {
+    border-radius: 50%;
+    border: 1px solid #f5f5f5;
+    color: #f5f5f5;
+    display: inline-block;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    padding: .25em .4em;
+    position: relative;
+    text-align: center;
+    top: -1px;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.categories {
+    display: block;
+    flex: 0 0 25%;
+    transition: 0.25s ease-in-out;
+}
+
+.categories:hover {
+    background-color: #ffc800;
+    color: #3d464d;
+    cursor: pointer;
+}
+
+.categories .btn {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0 30px;
+    position: relative;
+    width: 100%;
+}
+
+.categories a {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 100px;
+}
+
+.categories a * {
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    text-align: left;
+}
+
+.secondary-items {
+    align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.secondary-items .fa,
+.categories .fa {
+    margin: 0.25rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.clickdropdown-content,
+.hoverdropdown-content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: left;
+    justify-content: space-between;
+    margin-top: 64px;
+    position: absolute;
+    z-index: 999;
+}
+
+.clickdropdown-content > * {
+    background-color: #FFFFFF !important;
+    border-bottom: 1px solid #F5F5F5;
+    color: #00000080 !important;
+    padding: 8px 30px;
+    width: 100%;
+}
+
+.clickdropdown-content > *:hover {
+    background-color: #FFFFFF !important;
+    color: #6C757D !important;
+}
+
+.hoverdropdown a {
+    display: block;
+}
+
+.hoverdropdown a i {
+    display: inline-block;
+    font-size: 16px;
+    text-align: left;
+}
+
+.hoverdropdown-content > * {
+    color: #212529 !important;
+    width: 100%;
+}
+
+.hoverdropdown-content > *:hover {
+    background-color: #FFFFFF !important;
+}
+
+.items {
+    flex-direction: row;
+    margin-right: auto;
+    padding: 0;
+    text-align: left;
+}
+
+.items > a:first-child {
+    color: #ffd333;
+    padding-left: 40px;
+}
+
+.items a {
+    color: #f5f5f5;
+    display: block;
+    outline: 0;
+    padding: 20px 10px;
+    text-decoration: none
+}
+
+.badges {
+    flex-direction: row;
+    margin-left: auto;
+    padding: 0
+}
+
+.badges * {
+    display: block;
+    margin: 0 8px;
+}
